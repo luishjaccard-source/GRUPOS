@@ -11,7 +11,6 @@ body {
   align-items: center;
   font-family: Arial, sans-serif;
 
-  /* FUNDO */
   background-image: url("fundo.jpeg");
   background-position: center;
   background-size: cover;
@@ -24,7 +23,7 @@ body {
   gap: 20px;
 }
 
-/* BOTÕES CILÍNDRICOS */
+/* BOTÕES */
 .cilindro {
   width: 600px;
   height: 68px;
@@ -41,4 +40,18 @@ body {
   font-weight: bold;
 
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s e
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cilindro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  .cilindro {
+    width: 90%;
+    font-size: 18px;
+  }
+}
