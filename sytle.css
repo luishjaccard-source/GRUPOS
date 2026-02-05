@@ -1,40 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url(Desenho\ de\ fundo\ de\ formas\ pretas\ abstratas\ _\ Vetor\ Grátis.jpeg);
   font-family: Arial, sans-serif;
+
+  /* FUNDO */
+  background-image: url(Desenho\ de\ fundo\ de\ formas\ pretas\ abstratas\ _\ Vetor\ Grátis.jpeg);
   background-position: center;
   background-size: cover;
-  
+  background-repeat: no-repeat;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* espaço entre os cilindros */
+  gap: 20px;
 }
 
+/* BOTÕES CILÍNDRICOS */
 .cilindro {
   width: 600px;
   height: 68px;
-  background: linear-gradient(to bottom, #000000, #000000);
-  border-radius: 100px; /* isso cria o formato de cilindro */
+  background: linear-gradient(to bottom, #111, #000);
+  border-radius: 100px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  transition: transform 0.2s;
-}
 
-.cilindro:hover {
-  transform: scale(1.05);
-}
-
-
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s e
