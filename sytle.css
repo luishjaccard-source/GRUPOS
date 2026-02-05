@@ -12,7 +12,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* FUNDO */
-  background-image: url(Desenho\ de\ fundo\ de\ formas\ pretas\ abstratas\ _\ Vetor\ Grátis.jpeg);
+  background-image: url("fundo.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
